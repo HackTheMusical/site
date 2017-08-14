@@ -41,7 +41,9 @@ body {
 }
 
 .content {
-    background: #222
+    background: #222;
+    max-height: 500px;
+    overflow-y: auto;
 }
 
 .terminal {

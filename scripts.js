@@ -20,13 +20,6 @@ setTimeout(function() {
     newLogLine("Want to help?");
 }, 4000);
 
-setTimeout(function() {
-    newCommand("musical contact");
-    newLog()
-    newLogLine("Something something yayyy");
-    newLogLine("Something something yayyy");
-}, 6000);
-
 function newCommand(text) {
     var terminal = document.getElementById("terminal");
     terminal.insertAdjacentHTML('beforeend', '<div class="group"><p class="command">' + text + '</p></div')
@@ -42,4 +35,6 @@ function newLogLine(text) {
     var logs = document.getElementsByClassName("log");
     var log = logs[logs.length - 1]
     log.insertAdjacentHTML('beforeend', text + "<br>")
+    var elem = document.getElementById('content');
+    elem.scrollTop = elem.scrollHeight;
 }
