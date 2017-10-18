@@ -17,7 +17,7 @@ setTimeout(function() {
     newCommand("musical help");
     newLog()
     newLogLine("Want to help?");
-    newLogLine("Contact Tristan at tristan@tristanwiley.com?");
+    newLogLine("Contact Tristan at tristan@tristanwiley.com");
 }, 4000);
 
 function newCommand(text) {
